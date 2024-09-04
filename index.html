@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanova Home - Luxury Redefined</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cinzel', serif;
+            background-color: #000;
+            color: #F8BF4A; /* Deeper Gold */
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #F8BF4A;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #F8BF4A;
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #F8BF4A;
+        }
+
+        .hero {
+            background-image: url('your-hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-family: 'Great Vibes', cursive;
+            margin: 0;
+            color: #F8BF4A;
+        }
+
+        .hero p {
+            font-size: 1.8rem;
+            font-family: 'Cinzel', serif;
+            color: #F8BF4A;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background-color: #F8BF4A;
+            color: #000;
+            border: 2px solid #F8BF4A;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: #F8BF4A;
+        }
+
+        /* Cart Section */
+        .cart {
+            font-size: 1.2rem;
+            color: #F8BF4A;
+            margin-right: 20px;
+        }
+
+        /* Our Story Section */
+        .about {
+            padding: 80px;
+            background-color: #111;
+            color: #F8BF4A;
+            text-align: left;
+        }
+
+        .about h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #F8BF4A;
+        }
+
+        .about p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* Follow Us Section */
+        .follow-us {
+            padding: 50px;
+            text-align: center;
+            background-color: #111;
+        }
+
+        .follow-us h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #F8BF4A;
+        }
+
+        .social-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .social-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #111;
+            padding: 20px;
+            color: #F8BF4A;
+            width: 30%;
+            border: 1px solid #F8BF4A;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #F8BF4A;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #F8BF4A;
+            font-size: 0.9rem;
+            border-top: 1px solid #F8BF4A;
+        }
+
+        @media (max-width: 768px) {
+            .product-grid, .social-grid {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div>Kanova Home</div>
+        <ul>
+            <li><a href="#cart">Cart ($0)</a></li>
+            <li><a href="#explore">Explore Our Collection</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Discover Kanova's Charm</h1>
+        <p>Arabian Inspired Delights</p>
+        <button class="btn">Shop Now</button>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="about">
+    <h2>Our Story</h2>
+    <p>
+        At Kanova Home, we bring the essence of Arabian designs into your kitchen. Established in 2022 in Turkey, our mission is to offer a wide range of high-quality kitchen home utility products at affordable prices. We cater to a diverse audience, ensuring everyone can experience the beauty and functionality of our unique collections.
+    </p>
+    <p>
+        Dive into the world of Kanova Home where craftsmanship meets elegance. Our carefully curated products combine functionality with Arabian aesthetics, adding a touch of charm to every kitchen. With a commitment to quality and affordability, we strive to make your kitchen a place of inspiration and joy.
+    </p>
+    <button class="btn">Learn More</button>
+</section>
+
+<!-- Top Picks Section -->
+<section class="products">
+    <h2>Top Picks</h2>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="marble-mug.jpg" alt="Marble Texture Tea Mug">
+            <p>Marble Texture Tea Mug<br>C$18.00</p>
+        </div>
+        <div class="product-item">
+            <img src="espresso-cup.jpg" alt="Arabian Style Espresso Cup">
+            <p>Arabian Style Espresso Cup<br>C$12.00</p>
+        </div>
+        <div class="product-item">
+            <img src="IMG_2945.PNG" alt="Golden Floral Tea Set">
+            <p>Golden Floral Tea Set<br>C$50.00</p>
+        </div>
+    </div>
+</section>
+
+<!-- Follow Us Section -->
+<section class="follow-us">
+    <h2>Follow Us</h2>
+    <div class="social-grid">
+        <div class="social-item">
+            <img src="social1.jpg" alt="Follow Image 1">
+        </div>
+        <div class="social-item">
+            <img src="social2.jpg" alt="Follow Image 2">
+        </div>
+        <div class="social-item">
+            <img src="social3.jpg" alt="Follow Image 3">
+        </div>
+    </div>
+    <button class="btn">Load More</button>
+</section>
+
+<footer>
+    <p>&copy; 2024 Kanova Home. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
